@@ -31,6 +31,9 @@ public class Merchant {
 	private Date removeMerchantDate;
 	private String merchantName;
 	private String merchantStatus;
+	@ManyToOne
+	@JoinColumn(name="adminId")
+	private Admin admin;
 	
 	
 	public Date getRemoveMerchantDate() {

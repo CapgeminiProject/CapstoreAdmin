@@ -9,6 +9,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 @Entity
@@ -28,6 +30,9 @@ public class Orders {
 	private List<Merchant> merchant = new ArrayList<Merchant>();// one to many
 	private Date elligibleReturnDate;
 	private Date orderPlacedOn;
+	@ManyToOne
+	@JoinColumn(name="phoneNumber")
+	private Customer customer;
 	private boolean refundRequest;
 
 	public int getOrderId() {

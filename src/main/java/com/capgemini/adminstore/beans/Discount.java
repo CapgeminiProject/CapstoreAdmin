@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 @Entity
 public class Discount {
@@ -21,6 +22,9 @@ private Product product;//one to one
 @GeneratedValue(strategy=GenerationType.AUTO)
 private int discountId;
 private int percentDiscount;
+@ManyToOne
+@JoinColumn(name="adminId")
+private Admin admin;
 
 public Product getProduct() {
 	return product;

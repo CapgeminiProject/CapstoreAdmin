@@ -20,6 +20,7 @@ public class AdminStoreConfig implements WebMvcConfigurer  {
 	@Bean
 	public InternalResourceViewResolver getInternalResourceViewResolver()
 	{
+//		System.out.println("setttttttttttttttttttttting view ");
 		InternalResourceViewResolver ref=new InternalResourceViewResolver();
 		ref.setPrefix("/views/");
 		ref.setSuffix(".jsp");

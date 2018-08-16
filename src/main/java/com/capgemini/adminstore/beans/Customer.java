@@ -24,6 +24,7 @@ public class Customer {
 	private List<Review> reviews = new ArrayList<Review>();// one to many
 	@OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
 	private List<Orders> orders = new ArrayList<Orders>();// one to many
+	private String customerName;
 
 	public List<Review> getReviews() {
 		return reviews;
@@ -99,4 +100,13 @@ public class Customer {
 		this.cardNumber = cardNumber;
 	}
 
+	public String getCustomerName() {
+		return customerName;
+	}
+
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+
+	
 }

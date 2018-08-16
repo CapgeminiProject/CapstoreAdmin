@@ -22,7 +22,6 @@ public class Cart {
 	private Customer customer;//one to one
 	@OneToMany(mappedBy="cart",cascade=CascadeType.ALL)
 	private List<Product> products = new ArrayList<Product>();// one to many
-	private int quantityRequired;//max 5
 	private double totalAmount;
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="couponId")
@@ -47,12 +46,6 @@ public class Cart {
 	}
 	public void setCoupon(Coupon coupon) {
 		this.coupon = coupon;
-	}
-	public int getQuantityRequired() {
-		return quantityRequired;
-	}
-	public void setQuantityRequired(int quantityRequired) {
-		this.quantityRequired = quantityRequired;
 	}
 	public double getTotalAmount() {
 		return totalAmount;
