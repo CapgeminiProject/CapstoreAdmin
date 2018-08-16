@@ -1,0 +1,161 @@
+USER STORIES FOR CAP STORE MODULES
+
+1) As a user I want separate pages for login and sign up.
+   As a user i want separate recognition for user, merchant and admin
+   
+2) As a user i want to be able to logout at any page
+   As a user i want my session to end after some minutes of inactivity.
+
+3) As an admin i want access to all data relating to user, merchant and products.
+   As an admin i want to be able to change/update all requests sent to me from user and/or merchant.
+
+4) As a merchant i want to be able to upload my products onto the website for sale.
+   As a merchant i want to be able to have smooth communication with the customer and admin to ensure easy transactions and refunds if necessary.
+
+5) As a merchant i want a user friendly merchant login page which displays my inventory and details.
+   As a merchant i want to be able to check orders, add products to inventory, remove products, add promos and discounts.
+
+6) As a customer i want to be able to see an organized user page where all orders are displayed.
+   As a customer i want to be able to provide feedback for the items i have purchased and be able to change my information such as address, contact no. etc.
+
+7) As a user i want my password to be validated and encrypted in the database.
+
+8) As a user i want to be able to change my password when i want to.
+   As a user i want to be able to reset my password in case i forget by using a security question.
+
+9) As a user i want to be able to recieve an email containing a new password in case i forgot my old password.
+
+10) As an admin i want to be able to verify a merchants login and only after verification is the merchant allowed to access merchant page.
+
+11) As an admin i want to be able to send verification emails to registered emails of customers.
+    As an admin i want to be able to verify merchant emails and recieve emails form merchants that need to be forwarded to the customers.
+    As an admin i want to be able to send promo mails and discount  mails to customers.
+
+12) As a merchant i want to be able to update my inventory of products, add, remove or update products in the inventory.
+    As an admin i want to be able to access all data  of all products.
+    As an admin i want to be able to add, update or remove products from any inventory of any merchant.
+
+13) As an admin i want to be able to add merchants to CapStore.
+    As an admin i want to be able to send invitaions to merchants and third party merchants.
+
+14) As an admin i want to be able to add third party merchants to the store.
+    As an admin i want to be able to access the inventory of the third party merchant.
+
+15) As a user i want to be able to add product reviews for products i have purchased.
+    As a user i want to be able to see most recent product reviews on the product page.
+
+16) As a user i want to be able to send feedbacks for merchants to the admin who upon reviewing can forward the feedbacks to the respective merchants
+    As an admin i want to be able to redirect customer feedbacks about merchants directly to them.
+
+17) As a user i want a search bar to be available on all pages to search the products.
+    As an admin i want the search bar to display all information about all the products, users and merchants.
+    As a merchant i want the search bar to display information related to my inventory only.
+
+18) As an admin and a merchant i want to be able to upload photos of the products along with banners.
+
+19) As a user i want to be able to zoom into images of products and it should be displayed in a slideshow.
+
+20) As an admin i want to be able to allow pomos and discounts on products and categories as set by merchants.
+    As a merchant i want to be able to set up discounts on products for lomited time to lowest value.
+
+21) As an admin i want to be able to set a minimum value of purchase for checkout.
+    As a user i want to be able to add or remove items from the cart.
+
+22) As an admin i want to be able to generate coupons and email it to the customers.
+    As an admin i want to be able to set the validity of the coupons
+
+23) As a user i want to be able to chat with a customer care executive for queries and feedback.
+    As a merchant i want to be able to chat with the representatives in case of doubts and queries.
+    As an admin i should be able to chat with both customers and merchants as well as executives.
+
+24) As an admin i want a page for handling business analysis at the end of a certain period.
+
+25) As a user i would want to be bale to view products in a price range that i select.
+    As a user i want to be able to sort the products based on ascending price, descending price or most viewed etc.
+
+26) As a user i want to see an organized home page with cart options, account detail options and promotional offers.
+    As a user i want an option to filter or sort the items according to my preferances(price, brand, colour etc.)
+
+27) As a user i want to see product pictures from various angles and a rough size estimation chart.
+    As a user i want to see the latest discounts and offers on the product along with a description of the product.
+    As a user i want to be able to view and provide feedback on the product and also be able to see similar products on the page.
+
+28) As a user i want to be able to add any product into my wishlist despite the product being out of stock
+    As a user i want to be able to be able to buy selective products or all from my wishlist.
+
+29) As a user i want to see similar products when i view a product of a specific type(eg. covers)
+    As a user i want to be able to compare similar products with as much details as possible.
+
+30) As a user i want to be able to rate products out of 5 stars and be able to see the average rating of the product
+    As a merchant i want to be able to see the average merchant rating based on the ratings of the product.
+
+31) As a user i want to be able to return good and get a refund for it.
+    As a merchant i want returned goods to be directly added to my inventory.
+    As a third party merchant i want goods to be returned directly thru interface.
+
+32) As a user i want the money to be refunded to my account once i return goods.
+    As an admin i want all returned goods to come directly to me for verification and after it is verified, the money should be refunded back to the user.
+
+33) As a user i want to be able to see an invoice of all my products bought.
+    As a user i want to be able to see all details such as delivery time and total price along with shipping and gst.
+
+34) As a user i want to be able view the discounted price of products and see the discounted price in the invoice
+
+35) As a user i want to be able to apply discount coupons or codes on the final bill.
+
+36) As a user i should be able to input my shipping details at the time of checkout and get a verification on my email.
+
+37) As a user i want to be able to check the availability of the products during checkout.
+    As a merchant i would want the inventory to get updated everytime a product is purchased after checkout.
+
+38) As a user i would want the products to eb delivered to my shipping address and the inventory must be updated.
+
+40) As an admin i would want to be able to send promos and offers to the customers thru email.
+
+41) As an admin i want to be able to update the delivery status of orders.
+    As a user i would want to be able to check the delivery status of my order.
+
+42) As a user i would want to be able to pay for my order at the checkout page.
+    As a user i would want a success page upon successful payment of orders.
+
+43) As an admin i want to be able to collect the money from the user.
+    As an admin i should be able to update the revenue of the company ie. CAPSTORE.
+
+45) As a user, merchant and an admin, i would want all three pages to be integrated.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
