@@ -32,6 +32,7 @@ public class Product {
 	private Discount discount;//one to one
 	private long productViews;
 	private long productTimesBought;
+	private int cartQuantity;
 	private boolean productStatus;
 	private Date deliveryDate;
 	@ManyToOne
@@ -61,6 +62,24 @@ public class Product {
 	
 	
 	
+	public int getCartQuantity() {
+		return cartQuantity;
+	}
+	public void setCartQuantity(int cartQuantity) {
+		this.cartQuantity = cartQuantity;
+	}
+	public Cart getCart() {
+		return cart;
+	}
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
+	public Category getCategory() {
+		return category;
+	}
+	public void setCategory(Category category) {
+		this.category = category;
+	}
 	public int getProductId() {
 		return productId;
 	}

@@ -1,8 +1,11 @@
 package com.capgemini.adminstore.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.capgemini.adminstore.beans.Merchant;
 import com.capgemini.adminstore.repo.AddressRepo;
 import com.capgemini.adminstore.repo.AdminRepo;
 import com.capgemini.adminstore.repo.CartRepo;
@@ -58,4 +61,26 @@ public class AdminServicesImpl implements AdminServices {
 	
 	@Autowired
 	private WishlistRepo wishlistRepo;
+
+	@Override
+	public List<Merchant> viewAllMerchants() {
+		
+		return merchantRepo.findAll();
+	
+	}
+
+	@Override
+	public Merchant addMerchant(Merchant merchant) {
+		
+		return merchantRepo.save(merchant);
+		 
+	}
+
+	@Override
+	public Merchant removeMerchant(Merchant merchant) {
+
+		merchantRepo.delete(merchant);
+		
+		return merchant;
+	}
 }

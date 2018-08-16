@@ -19,8 +19,8 @@ public class Admin {
 	private List<Coupon> coupons = new ArrayList<Coupon>();// one to many
 	@OneToMany(mappedBy="admin",cascade=CascadeType.ALL)
 	private List<Discount> discounts = new ArrayList<Discount>();// one to many
-	private String username;
-	private String password;
+	private String username="admin123";
+	private String password="admin@123";
 	
 	public int getAdminId() {
 		return adminId;
