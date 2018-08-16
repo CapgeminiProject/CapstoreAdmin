@@ -44,6 +44,9 @@ public class Product {
 	private Date productAddedDate;
 	private String brand;
 	private Date productRemovedDate;
+	@ManyToOne
+	@JoinColumn(name="cartId")
+	private Cart cart;
 	
 	//changed
 	@ManyToOne
@@ -52,6 +55,9 @@ public class Product {
 	@ManyToOne
 	@JoinColumn(name="inventoryId")
 	private Inventory inventory;
+	@ManyToOne
+	@JoinColumn(name="categoryId")
+	private Category category;
 	
 	
 	
