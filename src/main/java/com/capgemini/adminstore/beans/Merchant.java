@@ -31,6 +31,8 @@ public class Merchant {
 	private Date removeMerchantDate;
 	private String merchantName;
 	private String merchantStatus;
+	private String securityQuestion;
+	private String securityAnswer;
 	@ManyToOne
 	@JoinColumn(name="adminId")
 	private Admin admin;
@@ -106,6 +108,18 @@ public class Merchant {
 	}
 	public void setAddMerchantDate(Date addMerchantDate) {
 		this.addMerchantDate = addMerchantDate;
+	}
+	public String getSecurityQuestion() {
+		return securityQuestion;
+	}
+	public void setSecurityQuestion(String securityQuestion) {
+		this.securityQuestion = securityQuestion;
+	}
+	public String getSecurityAnswer() {
+		return securityAnswer;
+	}
+	public void setSecurityAnswer(String securityAnswer) {
+		this.securityAnswer = securityAnswer;
 	}
 	
 	
