@@ -1,0 +1,66 @@
+Feature: CapStore feature
+
+Scenario: Customer is using CapStore
+
+Given User is logged out and visits 'www.capstore.com'
+When user clicks on 'sign up'
+And clicks on 'sign up as customer'
+And user enters valid credentials and clicks on 'register'
+Then 'you have registered successfully' message gets displayed
+And user is taken to 'capstore login page'
+
+
+
+When user is on login page 'www.capstore.com/login'
+And clicks on 'forgot password'
+Then user is taken to 'enter username page'
+
+When user is on 'username page'
+And enters registered 'username' in the field
+Then user is taken to 'securtiy question' page
+
+When user is on security question page
+And enters 'answer' correctly
+Then he is taken to 'new password page'
+
+When user is on 'new password' page
+And enters 'new password' and 'confirm new password' fields correctly
+Then 'your password has been successfully changed' message is displayed and user is redirected to 'login page'
+
+
+
+
+When user is on login page 'www.capstore.com/login'
+And clicks on 'login in as customer'
+And enters 'username' and 'password' correctly
+Then user is taken to 'capstore home page'
+
+When user is on 'home page'
+And clicks on 'log out'
+Then user gets logged out of session and taken to 'login page'
+
+When user is on 'home page'
+And clicks on 'your account'
+And clicks on 'change password'
+Then he is taken to 'change password' page
+
+When user is on 'change password page'
+And fills 'old password', 'new password' and 'confirm new password' correctly
+Then user is taken to 'password success page' where 'your password has been successfully changed' message is displayed
+And user is taken back to 'homepage'
+
+When user is on 'homepage'
+And user clicks on 'your account
+
+
+
+
+
+
+
+
+
+
+
+
+
